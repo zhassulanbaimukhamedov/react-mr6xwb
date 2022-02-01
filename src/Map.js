@@ -10,6 +10,9 @@ export default function Map() {
     return arr.map((s) => s[0].toUpperCase() + s.slice(1).toLowerCase());
   }
   function namesOnly(arr) {
+    return arr.map((user) => user.name);
+  }
+  function makeString(arr) {
     return arr.map((user) =>
       user.age > 50
         ? user.name + ' can go to the Matrix '
@@ -19,7 +22,7 @@ export default function Map() {
   function readyToPutInTheDom(arr) {
     return arr.map((user) => `<h1>${user.name}</h1><h2>${user.age}</h2>`);
   }
-  function makeString(arr) {}
+
   console.log(doubleNumbers([2, 5, 100]));
   console.log(stringItUp([2, 5, 100]));
   console.log(capitalizeNames(['john', 'JACOB', 'jinGleHeimer', 'schmit']));
