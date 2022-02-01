@@ -97,3 +97,7 @@ class ClickButton extends React.Component {
 }
 
 ReactDOM.render(<ClickButton />, document.getElementById('state2'));
+
+import Map from './Map';
+
+ReactDOM.render(<Map />, document.getElementById('map'));
