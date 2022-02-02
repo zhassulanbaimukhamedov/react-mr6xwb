@@ -1,6 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+function App2() {
+  function doubleNumbers(array) {
+    let doubleArray = array.map((item) => item * 2);
+    console.log(doubleArray);
+  }
+  return (
+    <div className="App2">
+      <h4>hello app2</h4>
+      <div className="task1">
+        <button onClick={() => doubleNumbers([2, 5, 100])}>Task1</button>
+      </div>
+    </div>
+  );
+}
+export default App2;
+
+ReactDOM.render(<App2 />, document.getElementById('App2'));
+
 import App from './App';
 
 ReactDOM.render(<App />, document.getElementById('app'));
